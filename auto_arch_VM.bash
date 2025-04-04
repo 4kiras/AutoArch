@@ -20,8 +20,7 @@ mount ${DISK}1 /mnt
 
 echo "📦 Instalando sistema base..."
 pacstrap /mnt base linux linux-firmware nano networkmanager grub sudo gnome gnome-tweaks gdm git lsb-release firefox neofetch telegram-desktop vlc curl \
-  gnome-themes-extra arc-gtk-theme papirus-icon-theme lxappearance qemu-guest-agent \
-  nmap wireshark-qt metasploit sqlmap hashcat netcat whois traceroute
+  gnome-themes-extra papirus-icon-theme lxappearance qemu-guest-agent
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
